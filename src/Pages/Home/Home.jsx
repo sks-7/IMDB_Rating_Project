@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import "../Home/home.css";
+import '../Home/home.css';
 
 import axios from 'axios';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import MovieList from '../../Component/MovieList/MovieList';
 
 const Home = () => {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -66,7 +67,7 @@ const Home = () => {
             </Link>
           ))}
         </Carousel>
-        {/* <MovieList /> */}
+        <MovieList />
       </div>
     </>
   );
